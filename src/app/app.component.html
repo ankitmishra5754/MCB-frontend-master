@@ -1,0 +1,16 @@
+<mat-toolbar>
+  <mat-toolbar-row>
+    <h1>MCB</h1>
+    <span class="menu-spacer"></span>
+    <div>
+      <a mat-button [routerLink]="'/dashboard'"> Dashboard </a>
+      <a mat-button [routerLink]="'/customerForm'"> Customer Form </a>
+      <a mat-button [routerLink]="'/table'"> Table </a>
+      <a mat-button [routerLink]="'/profile'"> User Profile </a>
+      <a mat-button [routerLink]="'/logout'"> Logout </a>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
